@@ -1,5 +1,5 @@
 import io
-from JsonParseError import JsonParseerror
+from .JsonParseError import JsonParseerror
 
 
 class JsonValidator:
@@ -48,8 +48,6 @@ class JsonValidator:
         try:
             self.open_file(filename)
             content = self._file.read()
-            print(content)
-        
             self.close_file()
             return content == "{}"
         except JsonParseerror as e:

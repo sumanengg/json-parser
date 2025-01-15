@@ -1,6 +1,6 @@
 import sys
 
-from jsonparser import JsonValidator
+from .jsonparser import JsonValidator
 
 
 def cli(filename: str):
