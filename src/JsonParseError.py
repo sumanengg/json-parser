@@ -5,4 +5,5 @@ class JsonParseerror(Exception):
     Attributes:
         message -- explanation of the error
     """
-    pass
+    def __init__(self, *args):
+        super().__init__(*args)
